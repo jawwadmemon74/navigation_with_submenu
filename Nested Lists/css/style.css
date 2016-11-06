@@ -1,0 +1,41 @@
+ul#parentUl {
+    list-style: none;
+    background: #888;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+ul#parentUl li a {
+    color: #fff;
+    font-family: cursive;
+    text-decoration: none;
+    padding: 27px;
+    float: left;
+}
+ul.submenu {
+    display: none;
+    top: 93px;
+}
+li.hasSubmenu:hover ul.submenu {
+    display: block;
+    position: absolute;
+    background: #999;
+    padding: 0;
+    list-style: none;
+}
+ul.submenu li {
+    font-family: arial;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+ul#parentUl li ul.submenu li a {
+    padding: 14px 23px ;
+    float: left;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+ul#parentUl li a:hover {
+    background: #000;
+}
